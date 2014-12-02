@@ -1,0 +1,184 @@
+<style>
+header
+ {
+   background-image: url('http://bobcat.library.nyu.edu/primo_library/libweb/custom/assets/images/nyulibraries/nyu/header.png?1415997929'); 
+   background-position: 21px 21px;
+   background-repeat: no-repeat;
+   background-color: #57068c;
+   height: 69px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-bottom: 1px solid #653d24;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus
+ {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+    background-color: #57068C !important;
+}
+.badge /* Box Guides Count*/
+{
+    visibility: hidden;
+}
+.badge:after /* Down Triangle for Boxes*/
+{
+    content: "▾";
+    visibility: visible;
+    color:  #4A4A4A !important; 
+    font-size: small !important;
+}
+
+.s-lg-index-nav-btn active
+{
+    background-color: #FFFFFF;
+}
+.bold
+{
+    color: #4A4A4A !important; 
+    font-weight: normal !important; 
+}
+.s-lg-index-nav-btn
+{
+    color: #57068C !important;
+    background-color: #FFFFFF !important;
+}
+.s-lg-public-search-field  /* Search Box Div*/
+{
+    width: 194px !important;   
+}
+.nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .nav-pills>li.active>a
+{
+    background-color: #FFFFFF !important;
+    border-bottom: 4px solid !important;
+    border-bottom-color: #57068C !important;
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+.nav>li>a:hover, .nav>li>a:focus
+{
+    background-color: #EEEEEE !important;
+    font-weight: bold;
+    border-radius: 0 !important;
+}
+ul.nav.nav-pills
+{
+    border-bottom: 2px solid !important;
+    border-bottom-color: #57068C !important;
+}
+.btn.btn-sm.btn-primary
+{
+    background-image: none !important;
+    color: #FFFFFF  !important;
+    background-color:  #008996 !important;
+    border-color:  #008996 !important;
+}
+#s-lg-hp-nav
+{
+    background-color: #FFFFFF !important;
+}
+.s-lg-index-nav-btn > a
+{
+    color: #57068C !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+.breadcrumbs               /*Breadcrumb Div*/
+{
+    border: 2px solid;
+    border-color: #57068C !important;
+    margin-top: 10px !important;
+    padding-right: 10px !important;
+}
+#s-lib-bc-list
+{
+    margin-left: 10px !important;
+}
+a, .ui-widget-content a
+{
+    color:  #57068C !important;
+    font-size: 11px;
+}
+.panel-default         /*Removing Rounded Corners from the boxes*/
+{
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+.panel-heading
+{
+    background-color: #F3F0F5  !important;
+    border-color: #E2E0E0 !important;
+}
+.s-lib-box-idx-guide-list, .s-lib-box-er-course-list        /* All Guides Inner Boxes*/
+{
+    border: white;
+    background-color: #FFFFFF !important;                 /* Removing box border and adding custom  purple bottom */
+    border-bottom: 2px solid !important;
+    border-bottom-color: #57068C !important;
+    border-radius: 0 !important;                                       /*Removing Rounded Corners*/
+   -moz-border-radius: 0 !important;
+}
+#s-lib-public-main .alert  /* Subject Homepage*/
+{
+    display: none;  
+}
+#s-lg-guide-list-controls  /* Div containing Showing and Sorting by alphabetically */
+{
+    display: none !important;
+}
+#search-guides   /*Seach Guides Div*/
+{
+   margin-right: 75px;    /* Positioning Search Guides Box*/
+   padding-top: 15px;
+}
+#s-lg-guide-search   /*Search Box Input*/
+{
+   background-color: #F3F3F3  !important;
+   border-color: #999999 !important;
+   border-radius: 0px;
+}
+.btn-default    /* Search Guides Button*/
+{
+   border: 2px solid;
+   border-color: #57068C !important;
+   border-radius: 0px;
+}
+.btn-default:hover   /* Search Guides Button*/
+{
+   border: 2px solid;
+   border-color: #57068C !important;
+   border-radius: 0px;
+   background-color:#57068C !important;
+   color: white !important;
+}
+.s-lg-guide-list   /*Removing Guides List Bullet Points*/
+{
+   list-style-type: none !important;
+}
+.no-class
+{
+ background-color: #57068C !important;
+}
+#s-lib-bc
+{
+   border: 0px !important;
+   width: inherit;
+}
+#s-lg-guide-search-form
+{
+   margin-top: 15px !important;
+}						
+</style>
+
+<script>
+$(document).ready(function()
+{
+   $('#s-lg-index-owner-btn').find('a').html("BY AUTHOR");  //Changing By Owner to By Author
+   $('#s-lg-index-group-btn').find('a').html("BY LIBRARY");  //Changing By Group to By Library
+   $('.btn-default').html("Search");  //Changing Text of Search Button
+   $('form.form-inline.pull-right').find('span').html("");  //Removing default Search text
+   if(document.getElementById("s-lg-guide-search"))
+   {
+          document.getElementById("s-lg-guide-search").setAttribute("placeholder","search subject guides");  //Changing Placeholder of Search Guides Box
+   }
+});
+</script>
