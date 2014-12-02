@@ -166,7 +166,19 @@ a, .ui-widget-content a
 #s-lg-guide-search-form
 {
    margin-top: 15px !important;
-}						
+}
+#s-lg-guide-search-terms
+{
+    background-color: #F3F3F3 !important;
+    border-color: #999999 !important;
+    border-radius: 0px;
+}
+#research-btn
+{
+    color: #FFFFFF  !important;
+    background-color:  #008996 !important;
+    border-color:  #008996 !important;
+}
 </style>
 
 <script>
@@ -176,9 +188,15 @@ $(document).ready(function()
    $('#s-lg-index-group-btn').find('a').html("BY LIBRARY");  //Changing By Group to By Library
    $('.btn-default').html("Search");  //Changing Text of Search Button
    $('form.form-inline.pull-right').find('span').html("");  //Removing default Search text
+   $('.margin-bottom-xlg').last().after("<div><a href='#'><button id='research-btn'>Make a Research Consultation!</button></a></div>");
    if(document.getElementById("s-lg-guide-search"))
    {
           document.getElementById("s-lg-guide-search").setAttribute("placeholder","search subject guides");  //Changing Placeholder of Search Guides Box
    }
+   if(document.getElementById("s-lg-guide-search-terms"))
+   {
+          document.getElementById("s-lg-guide-search-terms").setAttribute("placeholder","enter your search here");  //Changing Placeholder of Guides Page Search Box
+   }
+    
 });
 </script>
