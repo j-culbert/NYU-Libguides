@@ -6,7 +6,7 @@
         <!-- END: Page Header -->
         <!-- BEGIN: Guide Header -->
         <div id="s-lg-guide-header" class="container s-lib-header s-lib-side-borders">
-             
+    
             <div id="s-lib-bc" style="display: inline-block;">
                 <div class="breadcrumbs" style="float:left;">
                      {{breadcrumbs}}
@@ -16,10 +16,7 @@
                 </div>
              </div>
             <div id="s-lg-guide-header-info">
-                <h1 id="s-lg-guide-name">{{guide_title}}</h1>
-                <div id="s-lg-guide-desc-container" class="pad-top-med">
-                    <span id="s-lg-guide-description">{{guide_description}}</span>
-                </div>
+                <h1 id="s-lg-guide-name">{{guide_title}}</h1>              
             </div>
         </div>
         <!-- END: Guide Header -->
@@ -27,18 +24,27 @@
         <div id="s-lg-tabs-container" class="container s-lib-side-borders pad-top-med">
             <div id="s-lg-guide-tabs">
                 <div class="row">
-                    <div class="col-md-3 s-lg-tabs-side pad-bottom-med">
-                        <ul class="nav nav-pills nav-stacked">{{guide_nav}}
-</ul>
-                        {{side_nav_boxes}}
+                    <div class="col-md-3 s-lg-tabs-side pad-bottom-med" style="float: left;">
+                        <ul class="nav nav-pills nav-stacked">
+                                    {{guide_nav}}
+                         </ul>
+                        
                     </div>
-                    <div class="col-md-9">
+                    <div id="s-lg-col-1" class="col-md-9" style="display:inline-block; width: 50%;">
                         <div class="s-lg-tab-content">
+                              <div id="s-lg-guide-desc-container" class="pad-top-med">
+                                    <span id="s-lg-guide-description">{{guide_description}}</span>
+                            </div>
                             <div id="s-lg-guide-main" class="tab-pane active">
                                 {{content}}
                             </div>
                         </div>
+                         
+                        
             			{{page_prev_next_links}}
+                    </div>
+                    <div id="s-lg-col-2" class="col-md-3" style="float: right;">
+                           {{side_nav_boxes}}
                     </div>
                 </div>
             </div>

@@ -10,11 +10,16 @@ header
    padding-right: 20px;
    border-bottom: 1px solid #653d24;
 }
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus /* Guides Page Left Tabs Dropdown Menu links*/
  {
     text-decoration: none;
     color: #f5f5f5 !important;
     background-color: #57068C !important;
+    border-radius: 0px !important;
+}
+#s-lg-guide-tabs ul.nav li.dropdown:hover ul.dropdown-menu  /* Guides Page Left Tabs Dropdown Menu div*/
+{
+     border-radius: 0px !important;
 }
 .badge /* Box Guides Count*/
 {
@@ -46,9 +51,16 @@ header
 {
     width: 194px !important;   
 }
-.nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .nav-pills>li.active>a
+.nav-pills>li.active>a:hover,  .nav-pills>li.active>a:focus, .nav-pills>li.active>a
 {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF !important;  
+    border-bottom-color: #57068C !important;
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+#s-lg-hp-nav .nav-pills>li.active>a:hover, #s-lg-hp-nav .nav-pills>li.active>a:focus, #s-lg-hp-nav .nav-pills>li.active>a
+{
+    background-color: #FFFFFF !important;  
     border-bottom: 4px solid !important;
     border-bottom-color: #57068C !important;
     border-radius: 0 !important;
@@ -59,8 +71,10 @@ header
     background-color: #EEEEEE !important;
     font-weight: bold;
     border-radius: 0 !important;
+    border-bottom: 2px solid !important;
+    border-bottom-color: #EEEEEE !important;
 }
-ul.nav.nav-pills
+#s-lg-hp-nav .nav-pills
 {
     border-bottom: 2px solid !important;
     border-bottom-color: #57068C !important;
@@ -71,6 +85,13 @@ ul.nav.nav-pills
     color: #FFFFFF  !important;
     background-color:  #008996 !important;
     border-color:  #008996 !important;
+    border-radius: 0px !important;
+}
+.btn.btn-sm.btn-default.btn-close
+{
+    background-color:  #57068C !important;
+    borde-color:  #57068C !important;
+    color: #FFFFFF  !important;
 }
 #s-lg-hp-nav
 {
@@ -87,7 +108,12 @@ ul.nav.nav-pills
     border: 2px solid;
     border-color: #57068C !important;
     margin-top: 10px !important;
-    padding-right: 10px !important;
+    padding: 5px 10px 0px 0px !important;
+    font-size: 12px !important;
+}
+.breadcrumb > li
+{
+    font-size: 12px !important;
 }
 #s-lib-bc-list
 {
@@ -96,7 +122,7 @@ ul.nav.nav-pills
 a, .ui-widget-content a
 {
     color:  #57068C !important;
-    font-size: 11px;
+    font-size: 12px !important;
 }
 .panel-default         /*Removing Rounded Corners from the boxes*/
 {
@@ -138,9 +164,9 @@ a, .ui-widget-content a
 }
 .btn-default    /* Search Guides Button*/
 {
-   border: 2px solid;
+   border: 2px solid !important;
    border-color: #57068C !important;
-   border-radius: 0px;
+   border-radius: 0px !important;
 }
 .btn-default:hover   /* Search Guides Button*/
 {
@@ -153,6 +179,10 @@ a, .ui-widget-content a
 .s-lg-guide-list   /*Removing Guides List Bullet Points*/
 {
    list-style-type: none !important;
+}
+.popover-title /*Changing Popover Title Weight to Bold */
+{
+    font-weight: bold !important;
 }
 .no-class
 {
@@ -178,6 +208,63 @@ a, .ui-widget-content a
     color: #FFFFFF  !important;
     background-color:  #008996 !important;
     border-color:  #008996 !important;
+    font-size: 16px  !important;
+    padding: 15px  !important;
+    border: 0px !important;
+}
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-pills > li > a
+{
+   background-color: #57068C !important;
+   border-radius: 0px !important;
+   color: #FFFFFF !important;
+   padding: 4px 15px !important;
+   text-align: left !important;
+}
+#s-lg-tabs-container .nav-tabs > li > a:hover, #s-lg-tabs-container .nav-pills > li > a:hover
+{
+   background-color: #FFFFFF !important;
+   border: 1px solid !important;
+   border-color: #57068C !important;
+   border-radius: 0px !important;
+   color: #57068C !important;
+   padding: 4px 15px !important;
+   text-align: left !important;
+}
+#s-lg-tabs-container .nav-tabs > li, #s-lg-tabs-container .nav-pills > li 
+{
+    margin: 5px 0px !important;
+    border-bottom: 8px solid !important;
+    border-bottom-color: #FFFFFF !important;
+}
+#s-lg-tabs-container .nav-tabs, #s-lg-tabs-container .nav-pills
+{
+   border-bottom: 0px !important;
+   border-bottom-color: #FFFFFF !important;
+}
+.s-lib-box /* Guides Page Content Box*/
+{
+    box-shadow: none !important;
+    border: none !important;
+}
+.s-lib-box-title /* Guides Page Box Title */
+{
+   background-color: #F3F0F5 !important;
+   border: 1px solid !important;
+   border-color: #E2E0E0 !important;
+}
+.s-lib-box-content /* Guides Page Box Content */
+{
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid !important;
+    border-bottom-color: #4A4A4A !important;
+}
+#s-lg-guide-desc-container   /* Guides Page Description Container removing top padding*/
+{
+   padding-top: 0px !important;
+}
+#s-lg-guide-name   /* Guides Page Guide Name */
+{
+   font-size: 24px !important;
 }
 </style>
 
@@ -188,7 +275,7 @@ $(document).ready(function()
    $('#s-lg-index-group-btn').find('a').html("BY LIBRARY");  //Changing By Group to By Library
    $('.btn-default').html("Search");  //Changing Text of Search Button
    $('form.form-inline.pull-right').find('span').html("");  //Removing default Search text
-   $('.margin-bottom-xlg').last().after("<div><a href='#'><button id='research-btn'>Make a Research Consultation!</button></a></div>");
+   $('#ask-a-librarian').after("<div><a target='_blank' href='http://library.nyu.edu/forms/research/consultations.html'><button id='research-btn'>Make a Research Consultation!</button></a></div>");
    if(document.getElementById("s-lg-guide-search"))
    {
           document.getElementById("s-lg-guide-search").setAttribute("placeholder","search subject guides");  //Changing Placeholder of Search Guides Box
@@ -197,6 +284,5 @@ $(document).ready(function()
    {
           document.getElementById("s-lg-guide-search-terms").setAttribute("placeholder","enter your search here");  //Changing Placeholder of Guides Page Search Box
    }
-    
 });
 </script>
